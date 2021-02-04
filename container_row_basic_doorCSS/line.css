@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+}
+html body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Krona One', sans-serif;
+}
+section{
+    height:100vh;
+    width: 100vw;
+}
+
+/* Gauche  */
+.container{
+    width: 50%;
+    height: 100vh;
+    /* border: solid 3px blue; */
+    background: black;
+    padding: 10px;
+    float: left;
+
+}
+
+.containerFils{
+    width: 100%;
+    height: 20%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row;
+    /* border: solid 3px green; */
+    
+
+}
+
+.contenu{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    /* border: solid 3px rgb(240, 0, 40); */
+    /* background: rgb(121, 121, 121); */
+}
+
+.contenuFilsTop{
+    width: 100%;
+    height: 50%;
+    margin: 5px;
+    /* border: yellow 3px solid; */
+    /* box-shadow: 10px 10px 10px 10px rgb(255, 255, 255); */
+}
+.contenuFilsBottom{
+    width: 100%;
+    height: 50%;
+    margin: 5px;
+    /* border: yellow 3px solid; */
+    /* box-shadow: 10px 10px 10px 10px rgb(123, 123, 123); */
+}
+
+.lineTop{
+    height: 100%;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    /* border: greenyellow 1px solid ; */
+}
+.lineBottom{
+    height: 100%;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    transform: rotate(30deg);
+    /* border: greenyellow 1px solid ; */
+}
+
+    /* animation de rotation continue  */
+/* rotation avant  */
+@-webkit-keyframes rotate {
+    from{
+         -webkit-transform: rotate(0deg);
+    }     
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+.rotate {
+    -webkit-animation: rotate 15s linear infinite;
+}
+.rotate:hover{
+    animation-play-state: paused;
+} 
+
+ /* rotation arrière  */
+ @-webkit-keyframes rotateBack {
+    from{
+         -webkit-transform: rotate(0deg);
+    }     
+    to{
+        -webkit-transform: rotate(-360deg);
+    }
+}
+.rotateBack {
+    -webkit-animation: rotateBack 20s linear infinite;
+}
+.rotateBack:hover{
+    animation-play-state: paused;
+}
+
+
+
+/* Droite  */
+
+h1{
+    color: rgb(84, 0, 179);
+   font-size: 1.5rem;
+   border: 1px solid rgb(84, 0, 179);
+   padding: 20px;
+   width: 80%; 
+   text-align: center;
+   justify-content: center;
+}
+h2{
+    font-size: 4rem;
+    text-align: center;
+   
+}
+ p{
+    font-size: 4rem;
+    text-align: center;
+    width: 100vw;
+    /* height: 300px; */
+    color: rgb(96, 74, 121);
+    /* margin-left: 30px; */
+    
+   
+}
+/* p1{
+    font-size: 1rem;
+    text-align: right;
+    width: 50vw;
+    height: 50vh;
+    float: right;
+    
+}  */
+.neon {
+    color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px  rgb(84, 0, 179),
+      0 0 80px  rgb(84, 0, 179),
+      0 0 90px  rgb(84, 0, 179),
+      0 0 100px  rgb(84, 0, 179),
+      0 0 150px  rgb(84, 0, 179);
+      z-index: 10000;
+  }
+
+.containerRight{
+    width: 50%;
+    height: 100vh;
+    float:right;
+    /* border: 3px rgb(0, 77, 58) solid; */
+    background:  rgb(84, 0, 179);
+    padding: 10px;
+}
+
+.containerFilsRight{
+    width: 100%;
+    height: 20%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row;
+    /* border: solid 3px green; */
+}
+
+.lineTopRight{
+    height: 100%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(52, 19, 105);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    /* border: greenyellow 1px solid ; */
+}
+.lineBottomRight{
+    height: 100%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(52, 19, 105);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    transform: rotate(50deg);
+    box-shadow:  rgb(52, 19, 105) 0px 10px 40px 10px;
+    /* border: greenyellow 1px solid ; */
+}
+
+    /* animation de rotation continue  */
+/* rotation avant  */
+@-webkit-keyframes rotate {
+    from{
+         -webkit-transform: rotate(0deg);
+    }     
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+.rotate {
+    -webkit-animation: rotate 5s linear infinite;
+}
+.rotate:hover{
+    animation-play-state: paused;
+} 
+
+ /* rotation arrière  */
+ @-webkit-keyframes rotateBack {
+    from{
+         -webkit-transform: rotate(0deg);
+    }     
+    to{
+        -webkit-transform: rotate(-360deg);
+    }
+}
+.rotateBack {
+    -webkit-animation: rotateBack 20s linear infinite;
+}
+.rotateBack:hover{
+    animation-play-state: paused;
+}
+
+@media only screen and (max-width: 900px){
+    h2 p{
+        flex-wrap: wrap;
+        font-size: 2rem;
+    }
+}
